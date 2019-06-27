@@ -17,6 +17,11 @@ Fiji/ImageJ plugin for quick assessment of heart rate
  - Works on XYZ stack as well as XYT
  - Make sure units / sampling period is properly set up in Image -> Properties
 
+# Installation
+
+ - Fiji/ImageJ -> Plugins -> Install... (or Install PlugIn) -> select heartrate_.ijm file
+ - Restart Fiji/ImageJ, pluging will appear in the end of Plugins menu
+
 # References:
 
  - Demonstration of the Array.fourier() https://imagej.nih.gov/ij/macros/examples/TestArrayFourier.txt
