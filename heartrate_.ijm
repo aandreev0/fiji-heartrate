@@ -9,6 +9,19 @@ me@aandreev.net
 */
 
 Stack.getUnits(X, Y, Z, time_units, Value);
+
+fname =getTitle();
+// run image difference:
+Stack.getDimensions(width, height, channels, zframes, Nframes);
+run("Duplicate...", "title=1 duplicate range=1-"+(Nframes-1));
+img_1 = getTitle();
+selectWindow(fname);
+run("Duplicate...", "title=2 duplicate range=2-"+(Nframes));
+img_2 = getTitle();
+imageCalculator("Subtract create 32-bit stack", img_2,img_1);
+res = getTitle();
+selectWindow(res);
+// run analysis
 run("Plot Z-axis Profile");
 Plot.getValues(xvalues, yvalues_raw);
 Fs = 1./(xvalues[1] - xvalues[0]); // period of sampling, units
