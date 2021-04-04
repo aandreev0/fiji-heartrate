@@ -1,7 +1,7 @@
 Andrey Andreev, PhD
 me@aandreev.net
 
-University of Southern California
+California Institute of Technology / University of Southern California (first iterations of code)
 
 # fiji-heartrate
 
